@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+     <!-- The page has two section - Sidebar and main section -->
+     <div class="main-section">
+      <!-- The sidebar section -->
+      <div class="sidebar">
+        <div class="sidebar-header">
+          <h1>Forum</h1>
+        </div>
+        <div class="sidebar-content">
+          <div>
+            <ul>
+              <li class="all-categories">
+                <h2" class="">Categories</h2>
+                <ul class="categories">
+                  <li><a href="forum.html" class="green bg-green-500 w-24 text-center p-1 text-white rounded-md">General</a></li>
+                  <li><a href="forum.html" class="bg-blue-500 text-white  rounded-md p-1 blue">Technology</a></li>
+                  <li><a href="forum.html" class="bg-yellow-500 text-white p-1 yellow">Science</a></li>
+                  <li><a href="forum.html" class="black bg-black p-1 text-center text-white rounded-md">Health</a></li>
+                  <li><a href="forum.html" class="red bg-red-500 p-1 text-center text-white rounded-md">Sports</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="feature flex-1">
+            <h3>Featured</h3>
+            <div class="card">
+              <div class="name flex">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                </svg>
+                <span class="mx-2">Edward</span>                
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                quod, voluptates, quae, quibusdam dolorum quia quos
+                exercitationem, doloremque quas quidem.
+              </p>
+              <span class="bg-blue-500 w-24 text-center text-white rounded-md">Technology</span>
+            </div>
+
+            <div class="card">
+              <div class="name flex">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                </svg>
+                <span class="mx-2">Edward</span>                
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                quod, voluptates, quae, quibusdam dolorum quia quos
+                exercitationem, doloremque quas quidem.
+              </p>
+              <span class="bg-black w-24 text-center text-white rounded-md">Health</span>
+            </div>
+
+            <div class="card">
+              <div class="name flex">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                </svg>
+                <span class="mx-2">Edward</span>                
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                quod, voluptates, quae, quibusdam dolorum quia quos
+                exercitationem, doloremque quas quidem.
+              </p>
+              <span class="bg-yellow-500 w-24 text-center text-white rounded-md">Science</span>
+            </div>
+          </div>
+
+          <div class="user flex bg-slate-200 p-3 rounded-md my-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="w-7 h-7">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
+            <span class="mx-2">Edward</span>                
+          </div>
+        </div>
+      </div>
+      <!-- The main section -->
+      <div class="main-content">
+        <div class="main-header">
+          <form action="">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search for queries..."
+              class=""
+            />
+            <input  type="submit" value="Search" class="btn" />
+          </form>
+
+          <div class="nav-links">
+            <a href="main.html">Home</a>
+            <a href="forum.html">Forum</a>
+            <a href="profile.html">About</a>
+          </div>
+        </div>
+        <div class="main-body">
+          <h2>Welcome to the forum</h2>
+          <p>
+            Here you can post your queries and get them answered by the
+            community.
+          </p>
+        </div>
+
+        <div class="footer">
+          <div class="about">
+            <h3>About</h3>
+            <p>
+              Forum is a platform where you can post your queries and get them
+              answered by the community.
+            </p>
+          </div>
+          <div class="links">
+            <h3>Links</h3>
+            <ul>
+              <a href="main.html">Terms of service</a>
+              <a href="profile.html">Privacy Policy</a>
+              <a href="forum.html">Contact Us</a>
+            </ul>
+          </div>
+          <p>&copy; 2020 Forum. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
