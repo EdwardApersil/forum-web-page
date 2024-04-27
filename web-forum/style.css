@@ -22,8 +22,6 @@
       flex-direction: column;
     }
 
-    /* text-align: center; */
-
     ul {
       list-style: none;
       padding: 0;
@@ -36,6 +34,11 @@
       border-radius: 5px;
       cursor: pointer;
       transition: 0.3s;
+    }
+
+    .user-profile{
+      justify-content: space-between;
+      align-items: center;
     }
 
     .all-categories {
@@ -79,8 +82,6 @@
         flex-direction: column;
         gap: 15px;
         cursor: pointer;
-        /* width: 300px; */
-
 
         .card-body {
           padding: 20px;
@@ -94,9 +95,10 @@
       }
     }
   }
+  
 
   .main-content {
-    width: 75%;
+    width: 95%;
     background-color: #fff;
     padding: 10px;
     margin: 10px;
@@ -116,10 +118,20 @@
       border-bottom: 1px solid rgba(128, 128, 128, 0.357);
 
 
-      .nav-links{
+     
+
+      .nav{
         display: flex;
         gap: 10px;
         align-items: center;
+      }
+
+      .form-input{
+        width: 500px;
+      }
+
+      .btn{
+        cursor: pointer;
       }
     }
 
@@ -132,6 +144,10 @@
       padding: 20px;
       flex: 1;
       scroll-behavior: smooth;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      gap: 20px;
 
       .forum-card{
         width: 800px;
@@ -146,6 +162,7 @@
       border-top: 1px solid rgba(128, 128, 128, 0.357);
       padding: 20px;
       background-color: #ffffff;
+      margin-top: auto;
 
       .links a {
         color: #000000;
@@ -175,13 +192,29 @@
     flex-direction: column;
 
     .sidebar {
+      display: none;
       width: 100%;
       margin: 0;
     }
 
     .main-content {
-      width: 100%;
-      margin: 0;
+      width: 50%;
+      /* margin: 0; */
+
+      .main-header{
+        flex-direction: column-reverse;
+      }
+
+      .forum-card{
+        width: 100%;
+        background-color: aqua;
+
+        .name{
+          display: flex;
+          align-items: center;
+          gap: 150px;
+        }
+      }
     }
 
     .content {
