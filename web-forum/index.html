@@ -1,189 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Forum | Home</title>
+  </head>
+  <body class="main-page antialiased">
+    <!-- Header -->
+    <header class="py-4">
+      <div class="container mx-auto px-4">
+        <div class="main-header flex md:flex-row">
+          <div class="sidebar-header border-solid rounded-md">
+            <h1 class="font-extrabold text-2xl">Forum</h1>
+          </div>
+          <div class="nav flex rounded-md">
+            <div class="flex">         
+              <a href="#home" class="mx-3">Home</a>
+            </div>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
-  <title>Forum | Home</title>
-</head>
+            <div class="flex my-3">
+              <a href="#about" class="mx-3">About</a>
+            </div>
 
-<body>
-  <!-- The page has two section - Sidebar and main section -->
-  <div class="main-section">
-    <!-- The sidebar section -->
-    <div class="sidebar overflow-scroll">
-      <div class="user-profile flex bg-white rounded shadow-sm">
-        <div class="user flex p-3 rounded-md my-5">
-          <div class="user flex ">
-            <img src="./avatars/image-amyrobson.png" class="w-10 h-10" alt="">
-            <h3 class="mx-3 mt-1">Edward Apersil</h3>
+            <div class="flex">
+              <a href="#category" class="mx-3">Category</a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded shadow-sm">
+            <div class="user-profile flex rounded-md my-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 mx-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
+                />
+              </svg>
+              <div class="user flex">
+                <img
+                  src="./avatars/image-amyrobson.png"
+                  class="w-10 h-10"
+                  alt=""
+                />
+                <h3 class="mx-3 mt-1">Edward Apersil</h3>
+              </div>
+            </div>
           </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-          stroke="currentColor" class="w-6 h-6 mx-4">
-          <path stroke-linecap="round" stroke-linejoin="round"
-            d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
-        </svg>
       </div>
+    </header>
 
-      <div class="sidebar-content my-7">
-        <div class="all-categories my-1">
+    <!-- Main Content -->
+    <div class="container mx-auto px-4  flex flex-col md:flex-row" id="home">
+      <!-- Sidebar -->
+      <aside class="md:w-1/4 p-4">
+        <div class="sidebar bg-slate-100 overflow-scroll">
+          <div class="sidebar-content my-7 mx-5">
+            <div class="feature flex-1">
+              <h3 class="text-2xl font-extrabold">Recent Posts</h3>
+              <div class="card p-5 bg-white mt-4 rounded-md shadow-md">
+                <div class="name flex">
+                  <img
+                    src="./avatars/image-juliusomo.png"
+                    class="w-10 h-10"
+                    alt=""
+                  />
+                  <span class="mx-3 mt-1">Edward Apersil</span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  <span class="text-blue-500">Read more</span>
+                </p>
+                <span
+                  class="bg-yellow-500 p-1 my-2 w-24 text-center text-white rounded-md"
+                  >Technology</span
+                >
+              </div>
+
+              <div class="card bg-white p-5 rounded-md mt-5 shadow-md">
+                <div class="name flex">
+                  <img
+                    src="./avatars/image-amyrobson.png"
+                    class="w-10 h-10"
+                    alt=""
+                  />
+                  <span class="mx-3 mt-1">Edward Apersil</span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  <span class="text-blue-500">Read more</span>
+                </p>
+                <span
+                  class="bg-yellow-500 p-1 my-2 w-24 text-center text-white rounded-md"
+                  >Health</span
+                >
+              </div>
+
+              <div class="card bg-white p-5 rounded-md shadow-md mt-2">
+                <div class="name flex">
+                  <img
+                    src="./avatars/image-maxblagun.png"
+                    class="w-10 h-10"
+                    alt=""
+                  />
+                  <span class="mx-3 mt-1">Edward Apersil</span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  <span class="text-blue-500 mb-3">Read more</span>
+                </p>
+                <span
+                  class="bg-yellow-500 p-1 my-2 w-24 text-center text-white rounded-md"
+                  >Science</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Body -->
+      <main class="main-body md:w-3/4 p-4">
+        <div
+          class="hero flex md:gap-16 justify-center align-middle bg-slate-100 p-10 rounded-md shadow-md"
+        id="about">
+          <div class="text text-center md:my-10">
+            <h1 class="text-3xl font-bold">Welcome to the forum</h1>
+            <p class="mt-4">
+              A situation or meeting in which people can talk about a problem or matter especially of public interest.
+              a situation or meeting in which people can talk about a problem or matter especially of public interest
+              a situation or meeting in which people can talk about a problem or matter especially of public interest
+            </p>
+            <button
+              class="bg-blue-500 text-white my-8 w-36 p-3 rounded-md shadow-md font-semibold cursor-pointer hover:bg-blue-600 transition duration-300 ease-in-out"
+            >
+              Start reading
+            </button>
+          </div>
+        </div>
+
+        <div class="categories my-5" id="category">
           <h3 class="text-2xl my-2 font-extrabold">Categories</h3>
-          <ul class="categories">
-            <!-- <li><a href="forum.html" class="green bg-green-500 w-24 text-center p-1 text-white rounded-md">General</a></li> -->
-            <button class="cate-btn"><a href="forum.html" class="bg-blue-500 text-white rounded-md p-1 blue">Technology</a></button>
-            <button class="cate-btn"><a href="forum.html" class="bg-yellow-500 text-white p-1 yellow">Science</a></button>
-            <button class="cate-btn"><a href="forum.html" class="black bg-black p-1 text-center text-white rounded-md">Health</a></button>
+          <ul class="categories-list my-5">
+            <button class="cate-btn">
+              <a
+                href="forum.html"
+                class="bg-slate-300 text-white rounded-md p-3 blue hover:bg-slate-400"
+                >Technology</a
+              >
+            </button>
+            <button class="cate-btn">
+              <a
+                href="forum.html"
+                class="bg-slate-300 text-white p-3 yellow rounded-md hover:bg-slate-400"
+                >Science</a
+              >
+            </button>
+            <button class="cate-btn">
+              <a
+                href="forum.html"
+                class="black bg-slate-300 p-3 text-center text-white rounded-md hover:bg-slate-400"
+                >Health</a
+              >
+            </button>
+
+            <button class="cate-btn">
+              <a
+                href="forum.html"
+                class="black bg-slate-300 p-3 text-center text-white rounded-md hover:bg-slate-400"
+                >Sports</a
+              >
+            </button>
+
+            <button class="cate-btn">
+              <a
+                href="forum.html"
+                class="black bg-slate-300 p-3 text-center text-white rounded-md hover:bg-slate-400"
+                >Education</a
+              >
+            </button>
+
+            <button class="cate-btn">
+              <a
+                href="forum.html"
+                class="black bg-slate-300 p-3 text-center text-white rounded-md hover:bg-slate-400"
+                >Politics</a
+              >
+            </button>
           </ul>
         </div>
 
-        <div class="feature flex-1">
-          <h3 class="text-2xl font-extrabold">Featured</h3>
-          <div class="card">
-            <div class="name flex">
-              <img src="./avatars/image-juliusomo.png" class="w-10 h-10" alt="">
-              <span class="mx-3 mt-1">Edward Apersil</span>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-              <span class="text-blue-500">Read more</span>
-            </p>
-            <span class="bg-blue-500 w-24 text-center text-white rounded-md">Technology</span>
-          </div>
-
-          <div class="card">
-            <div class="name flex">
-              <img src="./avatars/image-amyrobson.png" class="w-10 h-10" alt="">
-              <span class="mx-3 mt-1">Edward Apersil</span>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-              <span class="text-blue-500">Read more</span>
-            </p>
-            <span class="bg-black w-24 text-center text-white rounded-md">Health</span>
-          </div>
-
-          <div class="card">
-            <div class="name flex">
-              <img src="./avatars/image-maxblagun.png" class="w-10 h-10" alt="">
-              <span class="mx-3 mt-1">Edward Apersil</span>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-              <span class="text-blue-500">Read more</span>
-            </p>
-            <span class="bg-yellow-500 w-24  text-center text-white rounded-md">Science</span>
+        <div class="forum-section">
+          <h3 class="text-2xl my-6 font-extrabold">Featured Discussion</h3>
+          <form action="">
+            <input
+              class="form-input p-3 border w-96 rounded-md shadow-sm"
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search for posts..."
+              class="p-3 border rounded-md w-96"
+            />
+            <input
+              type="submit"
+              value="Search"
+              class="btn mx-3 bg-blue-600 text-white cursor-pointer rounded-md p-3 w-20"
+            />
+          </form>
+          <div class="forum">
+            <div class="card-forum bg-white rounded-md"></div>
           </div>
         </div>
-      </div>
+        <!-- Main body content goes here -->
+      </main>
     </div>
 
-    <!-- The main section -->
-    <div class="main-content " id="home">
-      <div class="main-header">
-        <div class="sidebar-header border-solid my-5 rounded-md">
-          <h1 class="font-extrabold text-2xl">Forum</h1>
-        </div>
-        <form action="">
-          <input class="form-input p-3 border w-96 rounded-md shadow-sm" type="text" name="search" id="search"
-            placeholder="Search for posts..." class="p-3 border rounded-md w-96" />
-          <input type="submit" value="Search" class="btn mx-3 bg-blue-600 text-white rounded-md p-3 w-20" />
-        </form>
-
-        <div class="nav flex justify-between rounded-md">
-          <div class="flex">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-            </svg>
-            <a href="#home" class="mx-3">Home</a>
-          </div>
-  
-          <div class="flex my-3">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
-            </svg>
-  
-            <a href="main.html" class="mx-3">About</a>
-          </div>
-  
-          <div class="flex">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
-            </svg>
-  
-            <a href="main.html" class="mx-3">Contact</a>
-          </div>
-        </div>
+    <!-- Footer -->
+    <div class="footer p-5 text-center shadow-md rounded-md border ">
+      <div class="links flex gap-4 text-gray-500 justify-center">
+        <a href="">Terms of Service</a>
+        <a href="">Pravicy Policy</a>
+        <a href="">Contact Us</a>
       </div>
-      <div class="main-body overflow-auto">
-        <h2>Welcome to the forum</h2>
-        <div class="forum-card p-4 sm:w-40 rounded-md shadow-lg">
-          <div class="name lg:justify-between flex my-5">
-            <div class="user flex ">
-              <img src="./avatars/image-amyrobson.png" class="w-10 h-10" alt="">
-              <h3 class="mx-3 mt-1">Edward Apersil</h3>
-            </div>
-            <span class="follow bg-blue-500 text-white w-20 text-center p-1 rounded-md shadow-sm">Follow</span>
-          </div>
-          <div class="title">
-            <h2 class="title font-extrabold text-2xl">The disadvantages of Physics</h2>
-          </div>
-          <p class="description text-wrap my-4 text-gray-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-            quod, voluptates, quae, quibusdam dolorum quia quos
-            exercitationem, doloremque quas quidem.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-            quod, voluptates, quae,<span class="read-more text-blue-500">
-              Read more
-            </span> 
-          </p>
-
-          <div class="flex justify-between">
-            <span class="bg-yellow-500 w-24 text-center text-white rounded-md">Science</span>
-
-            <div class="icons flex sm:mx-6">
-              <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6 save">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
-              </svg>
-
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6 mx-4">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="card-forum">
-          
-        </div>
-      </div>
-
-      <div class="footer my-5">
-        <div class="links flex">
-          <a href="main.html">Terms of service</a>
-          <a href="profile.html">Privacy Policy</a>
-          <a href="forum.html">Contact Us</a>
-        </div>
-        <p>&copy; 2020 Forum. All rights reserved.</p>
-      </div>
+      <p></p>
     </div>
+
     <script type="module" src="/main.js"></script>
-</body>
-
+  </body>
 </html>

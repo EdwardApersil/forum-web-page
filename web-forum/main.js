@@ -1,2 +1,3 @@
-import './functions.js'
+import "./script.js";
+import "./style.css";
 

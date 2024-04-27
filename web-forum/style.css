@@ -2,224 +2,175 @@
 @tailwind components;
 @tailwind utilities;
 
-.main-section {
+
+.main-page{
+  height: 100%;
   display: flex;
-  justify-content: space-between;
-  height: 100vh;
-  background-color: #f1f1f1;
+  flex-direction: column;
 
-  .sidebar {
-    width: 25%;
-    background-color: #f1f1f1;
-    color: #000000;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(168, 168, 168, 0.237);
+  .contianer{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 90%;
+  }
 
-    .side-content {
-      display: flex;
-      flex-direction: column;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    li {
-      /* padding: 10px; */
-      /* margin: 10px; */
-      border-radius: 5px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .user-profile{
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .all-categories {
-
-      .cate-head h2{
-        font-size: 60px;
-        font-weight: bolder;
-      }
-
-      .categories {
-        display: flex;
-        grid-gap: 2px;
-
-        a {
-          text-decoration: none;
-          border-radius: 5px;
-          cursor: pointer;
-          transition: 0.3s;
-          text-align: center;
-
-        }
-
-
-      }
-
-    }
-
-
-    .feature {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      margin-top: 20px;
-
-      .card {
-        background-color: #ffffff;
-        padding: 10px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(188, 188, 188, 0.209);
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        cursor: pointer;
-
-        .card-body {
-          padding: 20px;
-          flex: 1;
-        }
-
-        &:hover {
-          background-color: #f1f1f1;
-        }
-
-      }
-    }
+  .main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
+  .nav{
+    align-items: center;
+  }
 
-  .main-content {
-    width: 95%;
-    background-color: #fff;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(140, 140, 140, 0.5);
+  .user-profile{
     display: flex;
-    flex-direction: column;
-    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
 
-    .main-header {
+  .main-body{
+    .hero{
+      background-image: url('./avatars/lucas-law-ecELcxmJTk4-unsplash.jpg');
+      height: 400px;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-      border-bottom: 1px solid rgb(255, 255, 255);
-      padding: 10px;
-      background-color: #ffffff;
-      border-bottom: 1px solid rgba(128, 128, 128, 0.357);
+      color: #fff;
+      /* blur background to the image*/
+      /* filter: blur(5px); */
 
 
-     
+      .text{
+        filter: blur(0);
+      }
 
-      .nav{
-        display: flex;
-        gap: 10px;
+      .text p{
+        font-size: 1.5rem;
+        color: #000;
         align-items: center;
-      }
-
-      .form-input{
-        width: 500px;
-      }
-
-      .btn{
-        cursor: pointer;
+        margin: 0 auto;
+        padding: 10px;
       }
     }
 
-    .main-header h2 {
-      margin: 0;
-      padding: 0;
+    .categories{
+      margin-bottom: 1rem;
     }
 
-    .main-body {
-      padding: 20px;
-      flex: 1;
-      scroll-behavior: smooth;
+    .categories-list{
       display: flex;
-      flex: 1;
-      flex-direction: column;
-      gap: 20px;
+      flex-wrap: wrap;
+      /* justify-content: center; */
+      gap: 10px;
 
-      .forum-card{
-        width: 800px;
-        margin-top: 10px;
-      }
     }
 
-    .footer {
+    .user-content{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-top: 1px solid rgba(128, 128, 128, 0.357);
-      padding: 20px;
-      background-color: #ffffff;
-      margin-top: auto;
+      gap: 10px;
+    }
 
-      .links a {
-        color: #000000;
-        margin: 0 10px;
-        list-style-type: none;
-        display: block;
-        text-decoration: none;
-      }
+    .form-input{
+      width: 800px;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
 
-      .links a:hover {
-        color: #555;
+    .user-name{
+      margin-left: 20px;
+    }
+
+    .title{
+      font-size: 1.5rem;
+      color: #000;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+
+    .content{
+      font-size: 1rem;
+      color: #a8a8a8;
+      /* margin: 0 auto; */
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .category{
+      padding: 5px ;
+      background-color: #ffcd50;
+      color: white;
+    }
+
+    .card-header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card-footer{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+
+      .icons{
+        display: flex;
+        align-items: center;
+        gap: 10px;
       }
     }
+
+
+    .footer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+
+
+   
   }
 
-  .content {
-    width: 75%;
-    background-color: #fff;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  @media screen and (max-width: 768px){
+    .main-header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero{
+      width: auto;
+    }
+
+    
   }
 
-  /* Mobile and tablet view */
-  @media (max-width: 768px) {
-    flex-direction: column;
-
-    .sidebar {
-      display: none;
-      width: 100%;
-      margin: 0;
+  @media screen and (max-width: 1068px){
+    .main-header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    .main-content {
-      width: 50%;
-      /* margin: 0; */
-
-      .main-header{
-        flex-direction: column-reverse;
-      }
-
-      .forum-card{
-        width: 100%;
-        background-color: aqua;
-
-        .name{
-          display: flex;
-          align-items: center;
-          gap: 150px;
-        }
-      }
-    }
-
-    .content {
-      width: 100%;
-      margin: 0;
+    .hero{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
     }
   }
 }
