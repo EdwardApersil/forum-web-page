@@ -16,51 +16,28 @@
             <h1 class="font-extrabold text-2xl">Forum</h1>
           </div>
           <div class="nav flex rounded-md">
-            <div class="flex">         
-              <a href="#home" class="mx-3">Home</a>
+            <div class="flex nav-link">
+              <a href="#home" class="mx-3 font-semibold">Home</a>
             </div>
 
-            <div class="flex my-3">
-              <a href="#about" class="mx-3">About</a>
+            <div class="flex my-3 nav-link">
+              <a href="#about" class="mx-3 font-semibold">About</a>
             </div>
 
-            <div class="flex">
-              <a href="#category" class="mx-3">Category</a>
+            <div class="flex nav-link">
+              <a href="#category" class="mx-3 font-semibold active:to-blue-400">Category</a>
             </div>
           </div>
 
           <div class="bg-white rounded shadow-sm">
-            <div class="user-profile flex rounded-md my-5">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 mx-4"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
-                />
-              </svg>
-              <div class="user flex">
-                <img
-                  src="./avatars/image-amyrobson.png"
-                  class="w-10 h-10"
-                  alt=""
-                />
-                <h3 class="mx-3 mt-1">Edward Apersil</h3>
-              </div>
-            </div>
+            <button class="bg-blue-500 p-2 rounded-md shadow-md text-white w-44">Login</button>
           </div>
         </div>
       </div>
     </header>
 
     <!-- Main Content -->
-    <div class="container mx-auto px-4  flex flex-col md:flex-row" id="home">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row" id="home">
       <!-- Sidebar -->
       <aside class="md:w-1/4 p-4">
         <div class="sidebar bg-slate-100 overflow-scroll">
@@ -131,17 +108,25 @@
       <!-- Main Body -->
       <main class="main-body md:w-3/4 p-4">
         <div
-          class="hero flex md:gap-16 justify-center align-middle bg-slate-100 p-10 rounded-md shadow-md"
-        id="about">
-          <div class="text text-center md:my-10">
+          class="hero relative flex md:gap-16 justify-center align-middle bg-slate-100 p-10 rounded-md shadow-md"
+          id="about"
+        >
+          <img
+            src="./avatars/background.jpg"
+            alt=""
+            class="absolute w-full h-full object-cover blur-md"
+          />
+          <div class="text text-center md:my-10 z-10">
             <h1 class="text-3xl font-bold">Welcome to the forum</h1>
-            <p class="mt-4">
-              A situation or meeting in which people can talk about a problem or matter especially of public interest.
-              a situation or meeting in which people can talk about a problem or matter especially of public interest
-              a situation or meeting in which people can talk about a problem or matter especially of public interest
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+              hic at quidem dolore et odio omnis, numquam consequuntur odit
+              corrupti alias sunt beatae necessitatibus, labore dolorum
+              reprehenderit. Nemo temporibus iusto consequuntur error maiores
+              nam vero nesciunt, accusamus quos velit vitae.
             </p>
             <button
-              class="bg-blue-500 text-white my-8 w-36 p-3 rounded-md shadow-md font-semibold cursor-pointer hover:bg-blue-600 transition duration-300 ease-in-out"
+              class="bg-blue-500 text-white w-36 p-3 rounded-md shadow-md font-semibold cursor-pointer hover:bg-blue-600 transition duration-300 ease-in-out"
             >
               Start reading
             </button>
@@ -225,7 +210,7 @@
     </div>
 
     <!-- Footer -->
-    <div class="footer p-5 text-center shadow-md rounded-md border ">
+    <div class="footer p-5 text-center shadow-md rounded-md border">
       <div class="links flex gap-4 text-gray-500 justify-center">
         <a href="">Terms of Service</a>
         <a href="">Pravicy Policy</a>
