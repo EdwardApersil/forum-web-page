@@ -16,15 +16,15 @@
             <h1 class="font-extrabold text-2xl">Forum</h1>
           </div>
           <div class="nav flex rounded-md">
-            <div class="flex">         
+            <div class="flex nav-link">
               <a href="#home" class="mx-3">Home</a>
             </div>
 
-            <div class="flex my-3">
+            <div class="flex my-3 nav-link">
               <a href="#about" class="mx-3">About</a>
             </div>
 
-            <div class="flex">
+            <div class="flex nav-link">
               <a href="#category" class="mx-3">Category</a>
             </div>
           </div>
@@ -60,7 +60,7 @@
     </header>
 
     <!-- Main Content -->
-    <div class="container mx-auto px-4  flex flex-col md:flex-row" id="home">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row" id="home">
       <!-- Sidebar -->
       <aside class="md:w-1/4 p-4">
         <div class="sidebar bg-slate-100 overflow-scroll">
@@ -131,17 +131,25 @@
       <!-- Main Body -->
       <main class="main-body md:w-3/4 p-4">
         <div
-          class="hero flex md:gap-16 justify-center align-middle bg-slate-100 p-10 rounded-md shadow-md"
-        id="about">
-          <div class="text text-center md:my-10">
+          class="hero relative flex md:gap-16 justify-center align-middle bg-slate-100 p-10 rounded-md shadow-md"
+          id="about"
+        >
+          <img
+            src="./avatars/background.jpg"
+            alt=""
+            class="absolute w-full h-full object-cover blur-md"
+          />
+          <div class="text text-center md:my-10 z-10">
             <h1 class="text-3xl font-bold">Welcome to the forum</h1>
-            <p class="mt-4">
-              A situation or meeting in which people can talk about a problem or matter especially of public interest.
-              a situation or meeting in which people can talk about a problem or matter especially of public interest
-              a situation or meeting in which people can talk about a problem or matter especially of public interest
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+              hic at quidem dolore et odio omnis, numquam consequuntur odit
+              corrupti alias sunt beatae necessitatibus, labore dolorum
+              reprehenderit. Nemo temporibus iusto consequuntur error maiores
+              nam vero nesciunt, accusamus quos velit vitae.
             </p>
             <button
-              class="bg-blue-500 text-white my-8 w-36 p-3 rounded-md shadow-md font-semibold cursor-pointer hover:bg-blue-600 transition duration-300 ease-in-out"
+              class="bg-blue-500 text-white w-36 p-3 rounded-md shadow-md font-semibold cursor-pointer hover:bg-blue-600 transition duration-300 ease-in-out"
             >
               Start reading
             </button>
@@ -225,7 +233,7 @@
     </div>
 
     <!-- Footer -->
-    <div class="footer p-5 text-center shadow-md rounded-md border ">
+    <div class="footer p-5 text-center shadow-md rounded-md border">
       <div class="links flex gap-4 text-gray-500 justify-center">
         <a href="">Terms of Service</a>
         <a href="">Pravicy Policy</a>
