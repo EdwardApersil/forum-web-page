@@ -120,7 +120,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const filteredData = data.filter(
       (post) =>
         post.title.toLowerCase().includes(searchTerm) ||
-        post.category.toLowerCase().includes(searchTerm)
+        post.category.toLowerCase().includes(searchTerm) || 
+        post.user.name.toLowerCase().includes(searchTerm)
     );
     renderPosts(filteredData);
   });
