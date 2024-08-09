@@ -126,6 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const categoryButtons = document.querySelectorAll(".cate-btn");
+  const allCateButton = document.querySelector(".all-btn")
 
   categoryButtons.forEach((button) => {
     button.addEventListener("click", (e) => {
@@ -136,6 +137,11 @@ document.addEventListener("DOMContentLoaded", () => {
       );
       renderPosts(filteredData);
     });
+  });
+
+  allCateButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    renderPosts(data);
   });
 
   // Function to render posts
